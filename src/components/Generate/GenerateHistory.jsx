@@ -1,8 +1,8 @@
-import { QRCodeSVG } from 'qrcode.react';
-import { SCAN_DATA } from '../constants.js';
+import {GENERATE_DATA} from "../../constants.js";
+import {QRCodeSVG} from "qrcode.react";
 
-export const ScanHistory = () => {
-    const data = JSON.parse(localStorage.getItem(SCAN_DATA) || '[]');
+export const GenerateHistory = () => {
+    const data = JSON.parse(localStorage.getItem(GENERATE_DATA) || '[]');
 
     return (
         <div>
